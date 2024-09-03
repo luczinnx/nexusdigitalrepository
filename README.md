@@ -24,4 +24,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do proje
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 ## Contato
-Se você tiver alguma dúvida ou sugestão, entre em contato conosco em contato@nexusdigital.com.
+Se você tiver alguma dúvida ou sugestão, entre em contato conosco em luczinn4@gmail.com
