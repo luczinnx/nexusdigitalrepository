@@ -1,10 +1,10 @@
-#Nexus Digital#
+#Nexus Digital
 Bem-vindo ao repositório do site da Nexus Digital! Este repositório contém o código-fonte para o site da nossa empresa fictícia, especializada em soluções digitais inovadoras.
 
-#Sobre o Projeto#
+##Sobre o Projeto
 Este projeto foi criado com o objetivo de simular um site corporativo para a Nexus Digital, uma empresa fictícia que oferece uma ampla gama de serviços digitais, incluindo desenvolvimento web, marketing digital, e-commerce e consultoria tecnológica.
 
-#Funcionalidades#
+##Funcionalidades
 Página Inicial: Uma visão geral dos serviços oferecidos pela Nexus Digital.
 Sobre Nós: Informações sobre a empresa, sua missão, visão e valores.
 Serviços: Descrição detalhada dos serviços que oferecemos.
@@ -18,8 +18,8 @@ Bootstrap: Para design responsivo e componentes prontos.
 Contribuindo
 Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do projeto e enviar pull requests. Para grandes mudanças, por favor, abra uma issue primeiro para discutir o que você gostaria de mudar.
 
-#Licença#
+##Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-#Contato#
+##Contato
 Se você tiver alguma dúvida ou sugestão, entre em contato conosco em contato@nexusdigital.com.
