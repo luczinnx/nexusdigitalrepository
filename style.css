@@ -1,0 +1,611 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+:root {
+    --fonte-titulo: 'New Amsterdam';
+    --fonte-parag : 'Arial', 'Sans-Serif';
+    --cor1        : #4DDB20;
+    --cor2        : #54B138;
+    --cor3        : #518641;
+    --cor4        : #435C3C;
+    --cor5        : #2C332A;
+}
+
+* {
+    margin         : 0px;
+    padding        : 0px;
+    box-sizing     : border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor5);
+    color           : #ffffff;
+}
+
+.cabeca {
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+    background-color: var(--cor2);
+    padding        : 1em;
+}
+
+.cabeca h1 {
+    font-size: 3.3em;
+}
+
+.cabeca h1 a {
+    text-decoration: none;
+    color          : white;
+}
+
+.lista-cabeca {
+    display        : flex;
+    gap            : 4em;
+    list-style-type: none;
+}
+
+.lista-cabeca li a {
+    text-decoration: none;
+    color          : #ffffff;
+    font-family    : var(--fonte-parag);
+    font-weight    : bold;
+    padding        : 1em;
+    transition     : .5s;
+    border-radius  : .6em;
+}
+
+.lista-cabeca li a:hover {
+    background-color: var(--cor3);
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-weight: 100;
+}
+
+main {
+    height: 100vh;
+}
+.ptcima {
+    display        : flex;
+    justify-content: space-evenly;
+}
+
+.ptesq {
+    width : 40em;
+    margin: 4.5em;
+}
+
+.parag {
+    font-family: var(--fonte-parag);
+    text-align : justify;
+}
+
+#parag-home {
+    font-size: 1.2em;
+}
+
+.btservicos {
+    border          : none;
+    border-radius   : 1em;
+    padding         : .5em;
+    margin          : .5em;
+    font-size       : 1.7em;
+    font-family     : var(--fonte-titulo);
+    background-color: var(--cor1);
+    color           : #ffffff;
+    transition      : .5s;
+}
+
+.btservicos:hover {
+    transform: scale(1.2, 1.2);
+    cursor   : pointer;
+    box-shadow      : 0px 0px 20px var(--cor1);
+}
+
+.btservicos:active {
+    transform: scale(1, 1);
+}
+
+.titulo-cabeca {
+    display: flex;
+    gap: .7em;
+    align-items: center;
+}
+
+.titulo-principal {
+    font-size: 5em;
+}
+
+.img-principal {
+    max-width: 4em;
+}
+
+.titulo-principal strong {
+    font-weight: 100;
+    color      : var(--cor1);
+}
+
+.foto-principal {
+    width           : 20em;
+    border-radius   : 3em;
+    margin          : 3em;
+    padding         : .35em;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor1));
+    background-size: 300% 300%;
+}
+
+.ptsobre {
+    background-image     : url('imagens/fundo-section-sobre.png');
+    background-size      : cover;
+    background-attachment: fixed;
+    display              : flex;
+    align-items          : center;
+}
+
+.ptesq2 {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : 80em;
+    margin        : 4.5em;
+}
+
+.ptdir2 {
+    display       : flex;
+    flex-direction: column;
+    width         : 75em;
+    height        : 25em;
+    margin        : 10em;
+}
+
+.rolagem {
+    overflow-y      : scroll;
+    border          : .2em solid var(--cor2);
+    border-radius   : 1em 0 0;
+    background-color: var(--cor5);
+}
+
+::-webkit-scrollbar {
+    background-color: var(--cor5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor3);
+}
+
+#parag {
+    padding: 1em;
+}
+
+.titulo-sobre {
+    font-size: 4.5em;
+    width: 7em;
+}
+
+.titulo-sobre strong {
+    font-weight: 100;
+    color      : var(--cor1);
+}
+
+.ptservicos {
+    display         : flex;
+    height          : 100vh;
+    flex-direction  : column;
+    background-color: var(--cor3);
+}
+
+.ptservicos h2 {
+    text-align : center;
+    padding    : 1em;
+    font-family: var(--fonte-titulo);
+    font-weight: 100;
+    font-size  : 2em;
+}
+
+.blocos-servicos {
+    display: flex;
+    gap    : 3em;
+    padding: 0px 2.5em 2.5em 4em;
+}
+
+.servico {
+    width : 30em;
+    height: 25em;
+}
+
+.cabeca-servico {
+    background-color: var(--cor4);
+}
+
+.titulo-servico {
+    padding    : .5em;
+    font-family: var(--fonte-titulo);
+    font-weight: 100;
+    font-size  : 1.6em;
+    text-align : center;
+}
+
+.corpo-servico {
+    display         : flex;
+    flex-direction  : column;
+    height          : 27em;
+    border-radius   : 0 0 2em 2em;
+    background-color: var(--cor2);
+    box-shadow      : 14px 10px 25px #0000002c;
+    padding         : 1.2em;
+}
+
+.corpo-servico img {
+    margin       : auto;
+    border-radius: 1em;
+    animation    : efeito 2s linear infinite alternate;
+}
+
+@keyframes efeito {
+    0% {
+        box-shadow: 0px 0px 20px var(--cor1);
+    }
+
+    25% {
+        box-shadow: 0px 0px 20px var(--cor1);
+    }
+
+    
+    50% {
+        box-shadow: 0px 0px 20px var(--cor2);
+    }
+
+    
+    75% {
+        box-shadow: 0px 0px 20px var(--cor3);
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px var(--cor3);
+    }
+}
+
+.corpo-servico h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: 100;
+    font-size  : 2em;
+}
+
+.corpo-servico img {
+    width : 18.5em;
+    border: 2px solid var(--cor1);
+}
+
+#parag-servico {
+    padding  : .1em;
+    font-size: .95em;
+}
+
+.ptcontato {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-evenly;
+    padding        : 2em;
+}
+
+.ptredes {
+    background-color: var(--cor3);
+    height          : 10em;
+    padding         : 2em;
+    transition      : .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ptredes:hover {
+    transform : scale(1.05, 1.05);
+    box-shadow: 0px 0px 20px var(--cor2);
+}
+
+.imglinks {
+    display: flex;
+    gap    : 3em;
+}
+
+.imglinks img {
+    width : 2.3em;
+    margin: auto;
+}
+
+.titulo-contato {
+    font-family: var(--fonte-titulo);
+    font-weight: 100;
+    font-size  : 2.5em;
+}
+
+.formulario 
+{
+    display       : flex;
+    flex-direction: column;
+    width         : 30em;
+}
+
+.formulario input, .formulario textarea {
+    display       : flex;
+    flex-direction: column;
+    width         : 20em;
+    height        : 4em;
+    margin        : .5em;
+    padding       : .5em;
+    border        : 2px solid var(--cor1);
+    border-radius : .5em;
+}
+
+.formulario button {
+    border          : none;
+    border-radius   : .5em;
+    margin-left     : .5em;
+    width           : 5em;
+    height          : 2em;
+    background-color: var(--cor3);
+    color           : #ffffff;
+    font-family     : var(--fonte-titulo);
+    font-size       : 1.3em;
+    transition      : .5s;
+}
+
+.formulario button:hover {
+    cursor          : pointer;
+    background-color: var(--cor1);
+    transform: scale(1.1, 1.1);
+}
+
+.formulario button:active {
+    transform: scale(1, 1);
+}
+
+#mensagem {
+    resize: none;
+    height: 6em;
+}
+
+#mensagem-sucesso {
+    font-family: var(--fonte-titulo);
+    font-weight: 100;
+}
+
+footer {
+    height: 3em;
+    color : white;
+}
+
+/* Estilos para dispositivos móveis (telas pequenas) */
+@media (max-width: 600px) {
+    .cabeca {
+        flex-direction  : column;
+        padding         : 0.5em;
+    }
+
+    .cabeca h1 {
+        font-size: 2em;
+    }
+
+    .img-principal {
+        width: 2.5em;
+    }
+
+    .lista-cabeca {
+        flex-direction: row;
+        gap           : 1em;
+    }
+
+    .lista-cabeca li a {
+        padding  : 0.5em;
+        font-size: 1em;
+    }
+
+    main {
+        height : auto;
+        padding: 1em;
+    }
+
+    .ptcima {
+        flex-direction : column;
+        align-items    : center;
+    }
+
+    .ptesq, .ptesq2, .ptdir2 {
+        width : 100%;
+        margin: 1em 0;
+    }
+
+    .foto-principal {
+        width : 15em;
+        margin: 2em auto;
+    }
+
+    .titulo-principal {
+        font-size: 3em;
+    }
+
+    .ptsobre {
+        display       : flex;
+        flex-direction: column;
+        padding       : 2em;
+    }
+
+    .titulo-sobre {
+        font-size: 2.5em;
+    }
+
+    .ptservicos {
+        height       : auto;
+        padding      : .5em;
+        border-radius: 0 0 2em 2em;
+    }
+
+    .blocos-servicos {
+        flex-direction: column;
+        align-items   : center;
+        gap           : 8em;
+        font-size     : .8em;
+    }
+
+    #ultimo {
+        margin-bottom: 6em;
+    }
+
+    .corpo-servico img {
+        width: 12.5em;
+    }
+
+    .servico {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    .ptcontato {
+        flex-direction: column;
+        gap           : 1em;
+    }
+
+    .ptredes {
+        height: 5.5em;
+        padding: 1em;
+    }  
+    
+    .ptredes h2 {
+        font-size: 1.5em;
+    }
+
+    .imglinks {
+        gap: 1em;
+    }
+    .imglinks img {
+        width: 1.5em;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .formulario input, .formulario textarea {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para tablets (telas médias) */
+@media (min-width: 601px) and (max-width: 1124px) {
+    .cabeca {
+        padding: 1em;
+    }
+
+    .cabeca h1 {
+        font-size: 2.5em;
+    }
+
+    .img-principal {
+        width: 3.5em;
+    }
+
+    .lista-cabeca {
+        gap: 2em;
+    }
+
+    .lista-cabeca li a {
+        padding: 0.8em;
+    }
+
+    .ptcima {
+        align-items    : center;
+    }
+
+    .ptesq {
+        width: 40%;
+        align-items: center;
+    }
+
+    .ptesq2, .ptdir2 {
+        width : 90%;
+        margin: 2em 0;
+    }
+
+    .foto-principal {
+        width: 15em;
+        margin: 2em auto;
+    }
+
+    .btservicos {
+        margin: 0%;
+        margin-top: 2%;
+        font-size: 1.3em;
+    }
+
+    .titulo-principal {
+        font-size: 4em;
+    }
+
+    .ptsobre {
+        display       : flex;
+        flex-direction: column;
+    }
+
+    .rolagem {
+        height: 15em;
+        
+    }
+
+    .titulo-sobre {
+        font-size: 3em;
+    }
+
+    .ptservicos {
+        height: auto;
+        padding: 1em;
+    }
+
+    .blocos-servicos {
+        justify-content: center;
+        margin-bottom  : 2em;
+        font-size      : .8em;
+        gap            : 4.5em;
+        flex-wrap      : wrap;
+    }
+
+    .corpo-servico img {
+        width: 17em;
+    }
+
+    .corpo-servico {
+        height: 26.5em;
+    }
+
+    .titulo-servico {
+        font-size: 1.3em;
+    }
+
+    .servico {
+        width : 45%;
+        margin-bottom: 1em;
+    }
+
+    .ptcontato {
+        flex-direction: column;
+        gap           : 1em;
+    }
+
+    .formulario {
+        width: 80%;
+        padding: 0 1em;
+    }
+
+    .formulario input, .formulario textarea {
+        width: 100%;
+        height: auto;
+    }
+}
