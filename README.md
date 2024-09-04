@@ -21,7 +21,7 @@ Este projeto foi criado com o objetivo de simular um site corporativo para a Nex
 Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do projeto e enviar pull requests. Para grandes mudanças, por favor, abra uma issue primeiro para discutir o que você gostaria de mudar.
 
 
-[![Acesse o site Nexus Digital](https://img.shields.io/badge/Visite%20Nexus%20do%20LG-blue?style=for-the-badge)](https://nexusdigital-1pumyd5cf-luczinnxs-projects.vercel.app/)
+[![Acesse o site Nexus Digital](https://img.shields.io/badge/Visite%20Nexus%20Digital-green?style=for-the-badge)](https://nexusdigital-1pumyd5cf-luczinnxs-projects.vercel.app/)
 
 ## Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
