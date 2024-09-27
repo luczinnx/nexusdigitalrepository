@@ -14,8 +14,6 @@ Este projeto foi criado com o objetivo de simular um site corporativo para a Nex
 - Tecnologias Utilizadas
 - HTML5: Para a estruturação do conteúdo.
 - CSS3: Para estilização e layout das páginas.
-- JavaScript: Para funcionalidades interativas.
-- Bootstrap: Para design responsivo e componentes prontos.
 
 ## Contribuindo
 Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do projeto e enviar pull requests. Para grandes mudanças, por favor, abra uma issue primeiro para discutir o que você gostaria de mudar.
