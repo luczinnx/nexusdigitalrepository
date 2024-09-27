@@ -21,6 +21,15 @@ form.addEventListener('submit', function(e) {
     const email = document.getElementById('email').value.trim();
 
     if(nome && email) {
-        msgSucesso.style.display = 'block';
+        playAnimation(msgSucesso.style.display = 'block');
     }
 });     
+
+window.sr = ScrollReveal({reset: true});
+
+sr.reveal('.ptesq2', {duration: 1000, origin: 'left', distance: '50px'});
+sr.reveal('.ptdir2', {duration: 1000, origin: 'right', distance: '50px'});
+sr.reveal('.ptservicos h2', {duration: 1000, origin: 'top', distance: '50px'});
+sr.reveal('.blocos-servicos', {duration: 1000, origin: 'bottom', distance: '10px'});
+sr.reveal('.titulo-principal', {duration: 1000, origin: 'top', distance: '50px'});
+ScrollReveal().reveal('.parag', {duration: 1000, origin: 'bottom', distance: '50px'});

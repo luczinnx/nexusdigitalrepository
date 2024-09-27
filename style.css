@@ -161,6 +161,10 @@ main {
     margin        : 10em;
 }
 
+.ptdir2, .ptesq2, .blocos-servicos, .ptservicos h2, .titulo-principal, .parag {
+    visibility: hidden;
+}
+
 .rolagem {
     overflow-y      : scroll;
     border          : .2em solid var(--cor2);
@@ -486,11 +490,6 @@ footer {
     }
     .imglinks img {
         width: 1.5em;
-    }
-
-    .formulario {
-        width: 100%;
-        padding: 0 1em;
     }
 
     .formulario input, .formulario textarea {
