@@ -234,6 +234,7 @@ main {
     font-weight: 100;
     font-size  : 1.6em;
     text-align : center;
+    transform: translateZ(200px);   
 }
 
 .corpo-servico {
@@ -250,6 +251,9 @@ main {
     margin       : auto;
     border-radius: 1em;
     animation    : efeito 2s linear infinite alternate;
+    transform-style: preserve-3d;
+    transform: perspective(5000px);
+    transform: translateZ(200px);
 }
 
 @keyframes efeito {
@@ -280,6 +284,7 @@ main {
     font-family: var(--fonte-titulo);
     font-weight: 100;
     font-size  : 2em;
+    transform: translateZ(200px);
 }
 
 .corpo-servico img {
@@ -290,6 +295,7 @@ main {
 #parag-servico {
     padding  : .1em;
     font-size: .95em;
+    transform: translateZ(2000px);
 }
 
 .ptcontato {
